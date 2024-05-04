@@ -26,3 +26,23 @@ The code above works perfectly well, but this time let's try using DRY-principle
 - Sprint the number of rows and columns in the DataFrame, as well as the data type of each column. Provide instructions about how to use the value that will eventually be returned by this function.
 - Return the variable data.
 - Call the extract function twice, once passing in the apps_data.csv file path, and another time with the review_data.csv file path. Output the first few rows of the apps_data DataFrame.
+
+
+
+# Transforming Data
+We're interested in working with the apps and their corresponding reviews in the"FOOD_AND_DRINK" category. We'd like to do the following:
+
+- Define a function with name transform. This function will have five parameters; apps, review, category, min_rating, and min_reviews.
+- Drop duplicates from both DataFrames.
+- For each of the apps in the desired category, find the number of positive reviews, and filter the columns.
+- Join this back to the apps dataset, only keeping the following columns:
+    - App
+    - Rating
+    - Reviews
+    - Installs
+    - Sentiment_Polarity
+- Filter out all records that don't have at least the min_rating, and more than the min_reviews.
+- Order by the rating and number of installs, both in descending order.
+- Call the function for the "FOOD_AND_DRINK" category, with a minimum average rating of 4 stars, and at least 1000 reviews.
+
+Alright, let's give it a shot!
