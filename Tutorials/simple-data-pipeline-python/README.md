@@ -46,3 +46,15 @@ We're interested in working with the apps and their corresponding reviews in the
 - Call the function for the "FOOD_AND_DRINK" category, with a minimum average rating of 4 stars, and at least 1000 reviews.
 
 Alright, let's give it a shot!
+
+
+# Loading Data
+Next, we'd like to load the transformed dataset into a SQL database. We'll be using pandas along with sqlite to do just that!
+
+- After importing sqlite3, create a function with name load. The function will have four parameters; dataframe, database_name, table_name.
+- Connect to the database using the connect() function.
+- Write the DataFrame to the provided table name. Replace the table if it exists, and do not include the index.
+- Now, we'll validate that the data was loaded correctly. Use the read_sql() function to return the DataFrame that was just loaded.
+- Assert that the number of rows and columns match in the original and loaded DataFrame.
+- Return the DataFrame read from the sqlite database.
+- Call the function for the top_apps_data DataFrame, for the "market_research" database and the top_apps table.
