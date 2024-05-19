@@ -1,3 +1,6 @@
 venv/
 Slides/
 airflow-tutorials/airflow/logs/
+projects/.env
+projects/twitter-data-pipeline/airflow/logs/
+projects/twitter-data-pipeline/venv/

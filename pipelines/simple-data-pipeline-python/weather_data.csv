@@ -1,0 +1,21 @@
+City,Temperature (Celsius),Weather,Humidity (%),Pressure,Wind Speed,Date
+Lagos,33.18,overcast clouds,67,1009,2.97,2024-05-18 17:24:12
+Cairo,38.42,clear sky,15,1013,4.63,2024-05-18 17:24:13
+Nairobi,24.62,light rain,57,1019,4.63,2024-05-18 17:24:14
+Johannesburg,21.88,clear sky,33,1023,0.51,2024-05-18 17:24:15
+Cape Town,18.58,clear sky,75,1019,4.12,2024-05-18 17:24:16
+Accra,30.23,few clouds,79,1010,5.14,2024-05-18 17:24:17
+Casablanca,20.32,scattered clouds,60,1014,4.12,2024-05-18 17:24:18
+Addis Ababa,21.6,broken clouds,51,1011,5.33,2024-05-18 17:24:20
+Algiers,21.9,scattered clouds,64,1011,4.12,2024-05-18 17:24:21
+Kampala,23.91,broken clouds,67,1011,3.27,2024-05-18 17:24:22
+Dakar,31.49,few clouds,78,1012,8.22,2024-05-18 17:24:23
+Abidjan,30.98,few clouds,74,1010,4.12,2024-05-18 17:24:25
+Luanda,28.0,few clouds,78,1007,6.69,2024-05-18 17:24:26
+Khartoum,42.12,clear sky,7,1002,3.4,2024-05-18 17:24:28
+Dar es Salaam,26.98,overcast clouds,76,1012,3.85,2024-05-18 17:24:29
+Kinshasa,33.21,few clouds,55,1009,5.14,2024-05-18 17:24:30
+Rabat,21.04,scattered clouds,52,1013,5.14,2024-05-18 17:24:32
+Tunis,38.89,scattered clouds,18,1006,5.85,2024-05-18 17:24:36
+Douala,30.95,scattered clouds,70,1008,1.54,2024-05-18 17:24:37
+Harare,22.15,clear sky,11,1016,2.55,2024-05-18 17:24:38
