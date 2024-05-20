@@ -1,6 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import timedelta
+from datetime import timedelta, datetime
 from airflow.utils.dates import days_ago
 
 
@@ -12,13 +12,13 @@ from weather_pipeline import (
 
 
 default_args = {
-    "owner": "Irene",
-    "start_date": days_ago(0),
-    "email": ["i.busah@alustudent.com"],
-    "email_on_failure": True,
-    "email_on_retry": True,
-    "retries": 1,
-    "retry_delay": timedelta(minutes=5),
+    "owner": "airflow",
+    "start_date": datetime(2024, 5, 15),  # Set to a past date for testing
+    # "email": ["i.busah@alustudent.com"],
+    # "email_on_failure": True,
+    # "email_on_retry": True,
+    # "retries": 1,
+    # "retry_delay": timedelta(minutes=5),
 }
 
 # initiating the dag
