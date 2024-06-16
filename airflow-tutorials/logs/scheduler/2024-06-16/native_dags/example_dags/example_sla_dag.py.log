@@ -7716,3 +7716,10 @@ RecursionError: maximum recursion depth exceeded
 [2024-06-16T16:59:22.813+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:22.812+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-16T16:59:22.847+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:22.847+0000] {dag.py:3954} INFO - Setting next_dagrun for example_sla_dag to 2024-06-16 16:56:00+00:00, run_after=2024-06-16 16:58:00+00:00
 [2024-06-16T16:59:22.873+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.118 seconds
+[2024-06-16T16:59:53.868+0000] {processor.py:161} INFO - Started process (PID=14822) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-06-16T16:59:53.870+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2024-06-16T16:59:53.871+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:53.870+0000] {dagbag.py:545} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-06-16T16:59:53.885+0000] {processor.py:840} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-06-16T16:59:53.914+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:53.914+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-16T16:59:53.956+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:53.956+0000] {dag.py:3954} INFO - Setting next_dagrun for example_sla_dag to 2024-06-16 16:56:00+00:00, run_after=2024-06-16 16:58:00+00:00
+[2024-06-16T16:59:53.979+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.119 seconds

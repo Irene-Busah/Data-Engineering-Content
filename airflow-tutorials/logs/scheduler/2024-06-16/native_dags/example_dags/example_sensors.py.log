@@ -4721,3 +4721,10 @@ RecursionError: maximum recursion depth exceeded
 [2024-06-16T16:59:23.979+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:23.978+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-16T16:59:23.997+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:23.997+0000] {dag.py:3954} INFO - Setting next_dagrun for example_sensors to None, run_after=None
 [2024-06-16T16:59:24.031+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.106 seconds
+[2024-06-16T16:59:54.124+0000] {processor.py:161} INFO - Started process (PID=14824) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-16T16:59:54.125+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2024-06-16T16:59:54.127+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:54.126+0000] {dagbag.py:545} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-16T16:59:54.138+0000] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-16T16:59:54.170+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:54.170+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-16T16:59:54.188+0000] {logging_mixin.py:188} INFO - [2024-06-16T16:59:54.188+0000] {dag.py:3954} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2024-06-16T16:59:54.215+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.098 seconds
