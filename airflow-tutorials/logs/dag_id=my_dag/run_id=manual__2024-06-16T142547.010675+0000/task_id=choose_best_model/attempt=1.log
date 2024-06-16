@@ -1,0 +1,24 @@
+[2024-06-16T14:26:20.863+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-16T14:26:20.907+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_dag.choose_best_model manual__2024-06-16T14:25:47.010675+00:00 [queued]>
+[2024-06-16T14:26:20.920+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_dag.choose_best_model manual__2024-06-16T14:25:47.010675+00:00 [queued]>
+[2024-06-16T14:26:20.921+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-16T14:26:20.948+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): choose_best_model> on 2024-06-16 14:25:47.010675+00:00
+[2024-06-16T14:26:20.965+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=239) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-16T14:26:20.970+0000] {standard_task_runner.py:63} INFO - Started process 241 to run task
+[2024-06-16T14:26:20.969+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'choose_best_model', 'manual__2024-06-16T14:25:47.010675+00:00', '--job-id', '127', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmpgujka6ac']
+[2024-06-16T14:26:20.975+0000] {standard_task_runner.py:91} INFO - Job 127: Subtask choose_best_model
+[2024-06-16T14:26:21.076+0000] {task_command.py:426} INFO - Running <TaskInstance: my_dag.choose_best_model manual__2024-06-16T14:25:47.010675+00:00 [running]> on host 3ee39c4edaab
+[2024-06-16T14:26:21.240+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_dag' AIRFLOW_CTX_TASK_ID='choose_best_model' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T14:25:47.010675+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T14:25:47.010675+00:00'
+[2024-06-16T14:26:21.244+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-16T14:26:21.245+0000] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-06-16T14:26:21.267+0000] {python.py:237} INFO - Done. Returned value was: accurate
+[2024-06-16T14:26:21.268+0000] {branch.py:36} INFO - Branch into accurate
+[2024-06-16T14:26:21.269+0000] {skipmixin.py:178} INFO - Following branch accurate
+[2024-06-16T14:26:21.308+0000] {skipmixin.py:246} INFO - Skipping tasks [('inaccurate', -1)]
+[2024-06-16T14:26:21.356+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-16T14:26:21.397+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=choose_best_model, run_id=manual__2024-06-16T14:25:47.010675+00:00, execution_date=20240616T142547, start_date=20240616T142620, end_date=20240616T142621
+[2024-06-16T14:26:21.466+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-16T14:26:21.521+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-16T14:26:21.524+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
